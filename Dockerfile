@@ -1,7 +1,6 @@
 FROM ubuntu:16.10
 
-RUN apt -y update && apt -y upgrade
-RUN apt -y install openttd
+RUN apt -y update && apt -y install openttd && rm -r /var/lib/apt/lists/*
 
 COPY openttd.cfg /root/.openttd/openttd.cfg
 COPY serverstart.sh /serverstart.sh
