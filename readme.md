@@ -10,7 +10,7 @@ It doesn't create any volumes by default, so if you want to keep the savegames b
 
     docker run -d -v SAVE_DIR_ON_HOST:/root/.openttd/save -p 3979:3979/tcp -p 3979:3979/udp jaknu/openttd
 
-There's a version of this packed with some selected OpenGRFs pushed to the tag `newgrfed` and maintained in [the newgrfed branch](https://github.com/jaknu/openttd/tree/newgrfed). To run that, just use the tag:
+There's a version of this packed with some selected newGRFs pushed to the tag `newgrfed` and maintained in [the newgrfed branch](https://github.com/jaknu/openttd/tree/newgrfed). To run that, just use the tag:
 
     docker run -d -p 3979:3979/tcp -p 3979:3979/udp jaknu/openttd:newgrfed
 
